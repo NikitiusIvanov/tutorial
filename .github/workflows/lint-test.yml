@@ -1,7 +1,7 @@
-# This workflow will install Python dependencies and run lint test with a single version of Python
+# This workflow will install Python dependencies and run lint and pytest tests with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python application
+name: Lint and Unit Tests
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-
+    name: Run tests
     runs-on: ubuntu-latest
 
     steps:
