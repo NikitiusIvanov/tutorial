@@ -31,12 +31,23 @@ BASE_WEBHOOK_URL = os.getenv('BASE_WEBHOOK_URL')
 # All handlers should be attached to the Router (or Dispatcher)
 router = Router()
 
+def message_lenght(message_text: str | None):
+    """Returns lenght of the recieved message
+    """
+    if message_text is not None:
+        return len(message_text)
+    else:
+        return None
+
+
 
 @router.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
     """
     This handler receives messages with `/start` command
     """
+    lenght = message_lenght(message=message)
+
     await message.answer(f"Hello, {hbold(message.from_user.full_name)}!")
 
 

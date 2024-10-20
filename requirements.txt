@@ -48,3 +48,4 @@ typing_extensions==4.12.2
 urllib3==2.2.3
 vertexai==1.70.0
 yarl==1.15.2
+pytest==8.3.3
