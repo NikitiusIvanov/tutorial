@@ -1,5 +1,5 @@
 # Fullstack AI Telegram Bot
 
-!["Components Architecture"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/components-architecture.drawio.png)
+!["Components Architecture"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/components-architecture.png)
 
-!["Use cases"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/use-cases.drawio.png)
+!["Use cases"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/use-cases.png)
