@@ -1,4 +1,4 @@
-# Fullstack AI Telegram Bot
+# Fullstack AI Telegram Bot (tutorial)
 
 !["Components Architecture"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/components-architecture.png)
 
