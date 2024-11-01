@@ -63,13 +63,14 @@ BASE_WEBHOOK_URL = os.getenv('BASE_WEBHOOK_URL')
 PROJECT_ID = os.getenv('PROJECT_ID')
 REGION = os.getenv('REGION')
 
-vertexai.init(project=PROJECT_ID, location=REGION)
+if PROJECT_ID is not None:
+    vertexai.init(project=PROJECT_ID, location=REGION)
 
-generation_config = {
-    'temperature': 0,
-}
+    generation_config = {
+        'temperature': 0,
+    }
 
-model = GenerativeModel("gemini-1.5-pro-002")
+    model = GenerativeModel("gemini-1.5-pro-002")
 ####################### Set prompt for tasks #######################
 PROMPT = """
 You are a helpful AI assistant that helps people collect data about their diets
@@ -123,7 +124,7 @@ def text_from_nutrition_facts(
             '\n✅ Saved to your meals'
         )
     
-    return text.replace('.', '\.')
+    return text
 
 
 def response_to_dict(
