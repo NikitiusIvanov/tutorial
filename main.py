@@ -64,6 +64,7 @@ PROJECT_ID = os.getenv('PROJECT_ID')
 REGION = os.getenv('REGION')
 
 vertexai.init(project=PROJECT_ID, location=REGION)
+
 generation_config = {
     'temperature': 0,
 }
