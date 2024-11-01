@@ -4,6 +4,7 @@ import sys
 import logging
 import asyncio
 from aiohttp import web
+import numpy as np
 
 # Aiogram imports
 from aiogram import Bot, Dispatcher, Router, F
@@ -258,7 +259,7 @@ async def welcome(
         reply_markup=build_reply_keyboard()
     )
 
-    await check_user_exist(message=message, session=session)
+    # await check_user_exist(message=message, session=session)
 
 
 @router.message(F.photo)
