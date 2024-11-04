@@ -4,5 +4,4 @@
 
 !["Use cases"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/use-cases.png)
 
-
-!["Use cases"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/Untitled%20Diagram.drawio.png)
+!["DB scheme"](https://github.com/NikitiusIvanov/tutorial/blob/main/schemes/Untitled%20Diagram.drawio.png)
