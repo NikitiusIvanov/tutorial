@@ -246,7 +246,7 @@ def build_inline_keyboard(is_saved: bool=False) -> InlineKeyboardMarkup:
 @router.message(CommandStart())
 async def welcome(
     message: Message,
-    session: AsyncSession,
+    # session: AsyncSession,
 ) -> None:
     first_name = message.from_user.first_name
 
